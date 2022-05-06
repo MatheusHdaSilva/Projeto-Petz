@@ -1,0 +1,3 @@
+Criado com o intuito de calcular o gasto anual do seu pet.
+até o momento o codígo é basiado e voltado para gatos, o código direciona a forma e o calculo que vai ser feito de acordo com tamanho das rações e Areia, com base na quantidade de KG é mais facil direcionar o código.
+Usando If, elif o cód fica com um tamanho proporcional e facíl de enteder já que cada if ou elif consiste em calcular e direcionar uma questão diferente.
