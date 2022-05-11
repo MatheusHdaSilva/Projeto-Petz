@@ -1,0 +1,8 @@
+ideia de melhoramento.
+Consiste em o algoritmo, começar perguntando sobre o qual animal o usuário gostaria de calcular seus gastos.
+Com gatos:
+É perguntando número de gatos, preço da ração, tamanho do pacote. a partir daí o programa é direcionado 
+para saber qual tipo de cálculo será feito usando o If e else. depois de apresentar o resultado do gasto anual.
+É perguntado sobre o gasto com areia seguindo a mesma lógica. a Diferença na aba de cachorros, seria a escolha do usuário
+sobre compra de jornais ou tapetes higiênicos que itens mais comuns usados por cachorros.
+Introduzir o tipo de granulado também usado para gatos.
