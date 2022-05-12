@@ -19,4 +19,16 @@ if select == 1:
         c = (12 / meses) * ração
         print('Gastando R$: {:.2f} em um pacote de ração de {}KG, Você tem o gasto anual de R$: {:.2f}'.format(ração, rkg, c))
 print('$%$ * 30')
-
+print('''COMO VOCÊ CUIDA DA HIGIÊNE DO SEU GATO?    
+[ 1 ] Areia simples
+[ 2 ] Granulado higiênico
+[ 3 ] As duas opções''')
+higiene = int(input('Selecione uma das opções?: '))
+if higiene == 1:
+    valor = float(input('Qual o preço do pacote da areia?: '))
+    kg = float(input('Quantos Kg tem o pacote?: '))
+    if kg <= 10:
+        quantidade = int(input('Quantos você compra por mês?: '))
+        c = (kg * quantidade) * 12
+        c1 = c * valor
+    print('Gastando R${:.2f} no pacote de {}Kg, comprando {} por mês. você tem um gasto anual de R$:{:.2f}'.format(valor, kg, quantidade, c1))
