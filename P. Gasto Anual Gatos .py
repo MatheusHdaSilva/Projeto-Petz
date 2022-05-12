@@ -22,6 +22,6 @@ if a <= 12 and 4:
    print('Gastando R${:.2f} em cada areia e comprando {} por mês você tem um gasto anual de {:.2f}'.format(a, a2, c1))
 elif a >= 20:
    a3 = int(input('Compra a cada quantos meses?: '))
-   c = 12 * a3
+   c = 12 / a3
    c1 = c * a 
    print('Gastando R$:{:.2f} a cada {} meses seu gasto anual com areia é {:.2f}'.format(a1, a3, c1))
