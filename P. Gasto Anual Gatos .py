@@ -2,7 +2,7 @@ print('Gasto Anual com seu Pet')
 g = int(input('Quantos gastos você tem?: '))
 r = float(input('qual o valor da Ração: '))
 r1 = int(input('Quantos Kg?: '))
-if r1 <+ 5 and 1:
+if r1 <= 5 and 1:
    r2 = int(input('Quantos você compra por mês?: '))
    c = (r1 * r2) * 12
    c1 = c * r
