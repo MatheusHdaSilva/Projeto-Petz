@@ -18,3 +18,5 @@ if select == 1:
         meses = int(input('Você compra esse pacote de {}KG a cada quantos meses?: '.format(rkg)))
         c = (12 / meses) * ração
         print('Gastando R$: {:.2f} em um pacote de ração de {}KG, Você tem o gasto anual de R$: {:.2f}'.format(ração, rkg, c))
+print('$%$ * 30')
+
