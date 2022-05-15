@@ -45,7 +45,7 @@ elif higiene == 2:
         c1 =  c * valor
         print('Gastando R$: {:.2f} no pacote de {}Kg, comprando {} por mês. Você tem um gasto anual de {:.2f}'.format(valor, kg, quantidade, c1))
     else: 
-       quantidade = input('Compra a cada quantos meses?: ')
+       quantidade = int(input('Compra a cada quantos meses?: '))
        c = (12 / quantidade) * valor
        print('Gastando R$:{:.2f} a cada {} meses, o seu gasto anual com Granulado Higiênico é de {:.2f}'.format(valor, quantidade, c))
         
