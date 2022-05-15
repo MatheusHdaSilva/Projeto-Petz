@@ -6,3 +6,8 @@ para saber qual tipo de cálculo será feito usando o If e else. depois de apres
 É perguntado sobre o gasto com areia seguindo a mesma lógica. a Diferença na aba de cachorros, seria a escolha do usuário
 sobre compra de jornais ou tapetes higiênicos que itens mais comuns usados por cachorros.
 Introduzir o tipo de granulado também usado para gatos.
+
+Após introduzir as opções de areia simples, granulado higienico e também a apição que escolhe as duas juntas,
+é notavel que a forma feita perguntando se o usúario compra varios pacotes ao mês. assim é melhor direcionado 
+o calculo que deve ser feito invés do próprio programa escolher isso por si só.
+essa alteração será feita até mesmo na aba de rações. após toda essa mudança será feito a escolha de cacchorro.
