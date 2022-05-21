@@ -1,4 +1,4 @@
-from select import select
+from time import sleep
 
 print('''!!!GASTO ANUAL COM SEU PET!!!
 !!!Selecione uma das Opções abaixo!!!
@@ -39,15 +39,9 @@ if higiene == 1:
 elif higiene == 2:
     valor = float(input('Qual o preço Do saco de Granulado Higiênico?: '))
     kg =  float(input('Quantos Kg tem o pacote?: '))
-    if kg <= 15:
-        quantidade = int(input('Quantos você compra por mês?: '))
-        c = (kg * quantidade) * 12
-        c1 =  c * valor
-        print('Gastando R$: {:.2f} no pacote de {}Kg, comprando {} por mês. Você tem um gasto anual de {:.2f}'.format(valor, kg, quantidade, c1))
-    else: 
-       quantidade = int(input('Compra a cada quantos meses?: '))
-       c = (12 / quantidade) * valor
-       print('Gastando R$:{:.2f} a cada {} meses, o seu gasto anual com Granulado Higiênico é de {:.2f}'.format(valor, quantidade, c))
+    print('''Selecione uma das opções abaixo!!
+    [ 1 ] Você compra varios pacotes ao mês?
+    [ 2 ] Você estoca um número de pacotes para comprar a cada 2 ou mais?''')
 else:
     valor1 = float(input('Qual o valor da areia?: '))
     kg1 = float(input('Quantos Kg tem a areia?: '))
@@ -62,4 +56,19 @@ else:
         granulado = int(input('Quantos pacotes de granulado você compra?: '))
         c =  (areia * valor1) * 12 + (granulado * valor2) * 12
         print('Gastando {:.2f} em areia de Tantos Kg{} e {:.2f} em granulado higiênico de {}Kg. Você tem o gasto anual de {:.2f}'.format(valor1, kg1, valor2, kg2, c))
+    else:
+        areia = int(input('Quantos pacotes você estoca?: '))
+        areiameses = int(input('Você precisa reestocar o número de {} pacotes de areia a cada quantos meses?: '.format(areia)))
+        granulado = int(input('Quantos pacotes você estoca?: '))
+        granuladomeses = int(input('Voce precisa reestocar o número de {} pacotes de granulado a cada quantos meses?: '.format(granulado)))
+        areiac =  (areia * valor1) 
+        areiamesesc = (12 / areiameses) * areiac
+        granuladoc = (granulado * valor2)
+        granuladomesesc = (12 / granuladomeses) * granuladoc
+        total = areiamesesc + granuladomesesc
+        print('Gastando R$:{:.2f} em Areia a cada {} meses, e gastando R$:{:.2f} em Granulado Higiênico a cada {} meses.'.format(areiac, areiameses, granuladoc, granuladomeses))
+        print('CARREGANDO...')
+        sleep(3)
+        print('Seu gasto Anual é de R$:{:.2f}'.format(total))
+
         
