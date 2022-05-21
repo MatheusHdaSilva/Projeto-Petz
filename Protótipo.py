@@ -23,7 +23,7 @@ print('''COMO VOCÊ CUIDA DA HIGIÊNE DO SEU GATO?
 [ 1 ] Areia simples
 [ 2 ] Granulado higiênico
 [ 3 ] As duas opções''')
-higiene = int(input('Selecione uma das opções?: '))
+higiene = int(input('Selecione uma das opções!: '))
 if higiene == 1:
     valor = float(input('Qual o preço do pacote da areia?: '))
     kg = float(input('Quantos Kg tem o pacote?: '))
@@ -42,6 +42,18 @@ elif higiene == 2:
     print('''Selecione uma das opções abaixo!!
     [ 1 ] Você compra varios pacotes ao mês?
     [ 2 ] Você estoca um número de pacotes para comprar a cada 2 ou mais?''')
+    select = int(input('Selecione uma das opção!:'))
+    if select == 1:
+        quantidade = int(input('Quantos pacotes você compra no mês?: '))
+        c = (quantidade * valor) * 12
+        print('Gastando R$:{:.2f} no pacote de {}Kg seu gasto anual com Granulado higiênico é!'.format(valor, kg))
+        print('CARREGANDO...')
+        sleep(3)
+        print('Gasto anual de R$:{:.2f}'.format(c))
+
+
+
+
 else:
     valor1 = float(input('Qual o valor da areia?: '))
     kg1 = float(input('Quantos Kg tem a areia?: '))
@@ -55,7 +67,10 @@ else:
         areia = int(input('Quantos pacotes de areia você compra?: '))
         granulado = int(input('Quantos pacotes de granulado você compra?: '))
         c =  (areia * valor1) * 12 + (granulado * valor2) * 12
-        print('Gastando {:.2f} em areia de Tantos Kg{} e {:.2f} em granulado higiênico de {}Kg. Você tem o gasto anual de {:.2f}'.format(valor1, kg1, valor2, kg2, c))
+        print('Gastando {:.2f} em areia de Tantos Kg{} e {:.2f} em granulado higiênico de {}Kg.'.format(valor1, kg1, valor2, kg2))
+        print('CARREGANDO...')
+        sleep(3)
+        print(' Você tem o gasto anual de {:.2f}'.format(c))
     else:
         areia = int(input('Quantos pacotes você estoca?: '))
         areiameses = int(input('Você precisa reestocar o número de {} pacotes de areia a cada quantos meses?: '.format(areia)))
@@ -70,5 +85,3 @@ else:
         print('CARREGANDO...')
         sleep(3)
         print('Seu gasto Anual é de R$:{:.2f}'.format(total))
-
-        
