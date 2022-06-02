@@ -1,13 +1,8 @@
-Ideia de melhoramento.
-Consiste em o algoritmo, começar perguntando sobre o qual animal o usuário gostaria de calcular seus gastos.
-Com gatos:
-É perguntando número de gatos, preço da ração, tamanho do pacote. a partir daí o programa é direcionado 
-para saber qual tipo de cálculo será feito usando o If e else. depois de apresentar o resultado do gasto anual.
-É perguntado sobre o gasto com areia seguindo a mesma lógica. a Diferença na aba de cachorros, seria a escolha do usuário
-sobre compra de jornais ou tapetes higiênicos que itens mais comuns usados por cachorros.
-Introduzir o tipo de granulado também usado para gatos.
+Criação do Projeto:
 
-Após introduzir as opções de areia simples, granulado higienico e também a apição que escolhe as duas juntas,
-é notavel que a forma feita perguntando se o usúario compra varios pacotes ao mês. assim é melhor direcionado 
-o calculo que deve ser feito invés do próprio programa escolher isso por si só.
-essa alteração será feita até mesmo na aba de rações. após toda essa mudança será feito a escolha de cacchorro.
+Construir um programa que cálcule o quanto eu gasto no ano com meus gatos, o código, era bem simples com perguntas meio que já determiando a resposta, o usuário não conseguia ser totalmente livre, no que usava com seu Pet. Ainda nesse mesmo modelo simples, tive a Ideia de colocar para selecionar se o usúario tem um cachorro, ou um gato. para ai sim, informar os produtos que usa e informar ao programa.
+Mas antes disso a simplicidade do programa e respostas meio que 'Pré determinadas' ou meio que forçadas me incomodava, gostaria que o usuário fosse totalmente livre para determinar o tipo de ração que usa e tambem os produtos que usa na parte higiênica do seu animal. 
+
+Quando entrei nessa questçao já tinha criado o modo de seleção de alternativas, assim comecei então a implementar a ideia na parte felina. Na alternativa que correspondia que o usuário compra tanto a areia comum como a madeira higiênica, que é o meu caso, assim foi mais facil de trabalhar e implementar os cálculos. 
+
+Terminado a alternativa na parte de Higiêne ( areia comum e madeira), senti que o código conseguiu armazenar e trabalhar melhor as informações solicitadas. A margem que é dada para o usuário direcionare as informações ficou mais limpa e também mais exata no que uma pessoal real gasta e com o seu gato nessa alternativa.
