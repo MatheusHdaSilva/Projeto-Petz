@@ -4,6 +4,8 @@ print('''!!!GASTO ANUAL COM SEU PET!!!
 !!!Selecione uma das Opções abaixo!!!
 [ 1 ] Gato 
 [ 2 ] Cachorro''')
+kg = 0
+valor = 0
 select = int(input('Qual o seu Pet?: '))
 if select == 1:
     gatos = int(input('Quantos gatos você tem?: '))
