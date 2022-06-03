@@ -6,3 +6,5 @@ Mas antes disso a simplicidade do programa e respostas meio que 'Pré determinad
 Quando entrei nessa questçao já tinha criado o modo de seleção de alternativas, assim comecei então a implementar a ideia na parte felina. Na alternativa que correspondia que o usuário compra tanto a areia comum como a madeira higiênica, que é o meu caso, assim foi mais facil de trabalhar e implementar os cálculos. 
 
 Terminado a alternativa na parte de Higiêne ( areia comum e madeira), senti que o código conseguiu armazenar e trabalhar melhor as informações solicitadas. A margem que é dada para o usuário direcionare as informações ficou mais limpa e também mais exata no que uma pessoal real gasta e com o seu gato nessa alternativa.
+
+Proxíma alternativa trabalhada foi a de granulado higiênico seguindo com o mesmo fluxo que o a ultima alternativa, como é só uma opção de produto então foi bem mais facil de tarbalhar e os cálculos foram mais simples de implementar.

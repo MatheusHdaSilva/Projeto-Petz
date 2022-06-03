@@ -18,7 +18,7 @@ if select == 1:
         meses = int(input('Você compra esse pacote de {}KG a cada quantos meses?: '.format(rkg)))
         c = (12 / meses) * ração
         print('Gastando R$: {:.2f} em um pacote de ração de {}KG, Você tem o gasto anual de R$: {:.2f}'.format(ração, rkg, c))
-print('$%$ * 30')
+print('=' * 90)
 print('''COMO VOCÊ CUIDA DA HIGIÊNE DO SEU GATO?    
 [ 1 ] Areia simples
 [ 2 ] Granulado higiênico
@@ -27,19 +27,30 @@ higiene = int(input('Selecione uma das opções!: '))
 if higiene == 1:
     valor = float(input('Qual o preço do pacote da areia?: '))
     kg = float(input('Quantos Kg tem o pacote?: '))
-    if kg <= 10:
-        quantidade = int(input('Quantos você compra por mês?: '))
-        c = (kg * quantidade) * 12
-        c1 = c * valor
-        print('Gastando R${:.2f} no pacote de {}Kg, comprando {} por mês. você tem um gasto anual de R$:{:.2f}'.format(valor, kg, quantidade, c1))
+    print('''Selecione uma das opções abaixo!!!
+    [ 1 ] Você compra varios pacotes ao mês?
+    [ 2 ] Você estoca um número de pacotes para comprar a cada 2 ou mais?''')
+    select = int(input('Selecione uma das opção!:'))
+    if select == 1:
+        quantidade = int(input('Quantos pacotes você compra no mês?: '))
+        c = (quantidade * valor) * 12
+        print('Gastando R$:{:.2f} no pacote de {}Kg seu gasto anual com Areia é!'.format(valor, kg))
+        print('CARREGANDO...')
+        sleep(3)
+        print('Gasto anual de R$:{:.2f}'.format(c))
     else:
-        quantidade = int(input('Compra a cada quantos mese?: '))
-        c =  (12 / quantidade) * valor
-        print('Gastando R$:{:.2f} a cada {} meses, o seu gasto anual com areia é de {:.2f}'.format(valor, quantidade, c))
+        areia = int(input('Quantos apcotes de areia você estoca?: '))
+        areiameses = int(input('Você reestoca o número de {} pacotes de Areia a cada quantos meses?: '.format(areia)))
+        areiac = (areia * valor)
+        areiamesesc = (12 / areiameses) * areiac
+        print('Gastando R$:{:.2f} em Areia cada {} meses.'.format(valor, areiameses))
+        print('CARREGANDO...')
+        sleep(3)
+        print('Você tem o gasto anual de {:.2f}'.format(areiamesesc))
 elif higiene == 2:
     valor = float(input('Qual o preço Do saco de Granulado Higiênico?: '))
     kg =  float(input('Quantos Kg tem o pacote?: '))
-    print('''Selecione uma das opções abaixo!!
+    print('''Selecione uma das opções abaixo!!!
     [ 1 ] Você compra varios pacotes ao mês?
     [ 2 ] Você estoca um número de pacotes para comprar a cada 2 ou mais?''')
     select = int(input('Selecione uma das opção!:'))
@@ -50,10 +61,15 @@ elif higiene == 2:
         print('CARREGANDO...')
         sleep(3)
         print('Gasto anual de R$:{:.2f}'.format(c))
-
-
-
-
+    else:
+        granulado = int(input('Qauntos pacotes de Granulado higiênico você estoca?:'))
+        granuladomeses = int(input('Você reestoca o número de {} pacotes de Granulado a cada quantos meses?: '.format(granulado)))
+        granuladoc = (granulado * valor)
+        granuladomesesc = (12 / granuladomeses) * granuladoc
+        print('Gastando R$:{:.2f} em Granulado Higiênico a cada {} meses.'.format(valor, granuladomeses))
+        print('CARREGANDO...')
+        sleep(3)
+        print('Você tem o gasto anual de {:.2f}'.format(granuladomesesc))
 else:
     valor1 = float(input('Qual o valor da areia?: '))
     kg1 = float(input('Quantos Kg tem a areia?: '))
@@ -70,11 +86,11 @@ else:
         print('Gastando {:.2f} em areia de Tantos Kg{} e {:.2f} em granulado higiênico de {}Kg.'.format(valor1, kg1, valor2, kg2))
         print('CARREGANDO...')
         sleep(3)
-        print(' Você tem o gasto anual de {:.2f}'.format(c))
+        print('Você tem o gasto anual de {:.2f}'.format(c))
     else:
-        areia = int(input('Quantos pacotes você estoca?: '))
+        areia = int(input('Quantos pacotes você estoca de Areia?: '))
         areiameses = int(input('Você precisa reestocar o número de {} pacotes de areia a cada quantos meses?: '.format(areia)))
-        granulado = int(input('Quantos pacotes você estoca?: '))
+        granulado = int(input('Quantos pacotes você estoca de Granulado Higiênico?: '))
         granuladomeses = int(input('Voce precisa reestocar o número de {} pacotes de granulado a cada quantos meses?: '.format(granulado)))
         areiac =  (areia * valor1) 
         areiamesesc = (12 / areiameses) * areiac
