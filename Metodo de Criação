@@ -7,4 +7,15 @@ Quando entrei nessa questçao já tinha criado o modo de seleção de alternativ
 
 Terminado a alternativa na parte de Higiêne ( areia comum e madeira), senti que o código conseguiu armazenar e trabalhar melhor as informações solicitadas. A margem que é dada para o usuário direcionare as informações ficou mais limpa e também mais exata no que uma pessoal real gasta e com o seu gato nessa alternativa.
 
-Proxíma alternativa trabalhada foi a de granulado higiênico seguindo com o mesmo fluxo que o a ultima alternativa, como é só uma opção de produto então foi bem mais facil de tarbalhar e os cálculos foram mais simples de implementar.
+AS Proxímas alternativas foram trabalhadas seguindo com o mesmo fluxo que o a ultima alternativa, como é só uma opção de produto então foi bem mais facil de tarbalhar e os cálculos foram mais simples de implementar.
+
+Sobre a Ração: 
+
+#seguimento de criação e ideia de melhora:
+Pensei em opções a mais, que poderia emplementar na categoria. Mas seguindo o mesmo modelo das alternativas Higiênicas continua tão completo quanto, uma breve ideia de trabalhar informando as marcas e beneficios que elas trazem ou tipo castrado ou não / adulto ou filhote. mas quem sabe mais pra frente...
+
+#petiscos:
+Também pode ser implementado se o usúario gostaria ou não de calcular quantos petiscos ele compra no deccorer do ano...
+
+Proximo passo!: 
+É fazer a criação desses algoritmo para calcular itens usados por cachorros. Fora rachão, na parte da higiêne trabalhar com jornais e tapetes Higiênicos
