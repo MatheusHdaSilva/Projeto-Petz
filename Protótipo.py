@@ -4,22 +4,31 @@ print('''!!!GASTO ANUAL COM SEU PET!!!
 !!!Selecione uma das Opções abaixo!!!
 [ 1 ] Gato 
 [ 2 ] Cachorro''')
-kg = 0
-valor = 0
 select = int(input('Qual o seu Pet?: '))
 if select == 1:
     gatos = int(input('Quantos gatos você tem?: '))
-    ração = float(input('Qual o valor da Ração?: '))
-    rkg = float(input('Quantos KG é o pacote da Ração?: '))
-    if rkg <= 5:
-        quantidade = int(input('Quantos pacotes você compra por mês?: '))
-        c = (rkg * quantidade) * 12
-        c1 = c * ração
-        print('Gastando R$: {:.2f} em um pacote de ração de {}KG, você tem um gasto anual de R$: {:.2f}'.format(ração, rkg, c1))
-    elif rkg >=10:
-        meses = int(input('Você compra esse pacote de {}KG a cada quantos meses?: '.format(rkg)))
-        c = (12 / meses) * ração
-        print('Gastando R$: {:.2f} em um pacote de ração de {}KG, Você tem o gasto anual de R$: {:.2f}'.format(ração, rkg, c))
+    valor = float(input('Qual o valor da Ração?: '))
+    kg = float(input('Quantos KG é o pacote da Ração?: '))
+    print('''Selecione uma das Opções a baixo!!!
+    [ 1 ] Você compra varios pacotes ao mês?
+    [ 2 ] você estoca um número de pacotes para comprar a cada 2 ou mais?''')
+    select = int(input('selecione uma das opções?: '))
+    if select == 1:
+        quantidade = int(input('Quantos pacotes você compra no mês?: '))
+        c = (quantidade * valor) * 12
+        print('Gastando R$:{:.2f} no pacote de {}Kg se anual com Ração é...'.format)(valor, kg)
+        print('CARREGANDO...')
+        sleep(3)
+        print('Gasto Anual de R$:{:.2f}'.format(c))
+    else:
+        ração = int(input('Quantos pacotes de Ração você estoca no Mês'))
+        raçãomeses = int(input('Você reestoca o número de {} pacotes de Ração a cada quantos meses?: '.format(ração)))
+        raçãoc = (ração *- valor)
+        raçãomesesc = (12 / raçãomeses) * raçãoc
+        print('Gastando R$:{:.2f} em Ração de {} kg a cada {} meses o seu gasto anual é de...'.format(valor, kg, raçãomeses))
+        print('CARREGANDO...')
+        sleep(3)
+        print('Você tem o gasto anual de {:.2f}'.format(raçãomesesc))
 print('=' * 90)
 print('''COMO VOCÊ CUIDA DA HIGIÊNE DO SEU GATO?    
 [ 1 ] Areia simples
@@ -50,7 +59,7 @@ if higiene == 1:
         sleep(3)
         print('Você tem o gasto anual de {:.2f}'.format(areiamesesc))
 elif higiene == 2:
-    valor = float(input('Qual o preço Do saco de Granulado Higiênico?: '))
+    valor = float(input('Qual o preço do saco de Granulado Higiênico?: '))
     kg =  float(input('Quantos Kg tem o pacote?: '))
     print('''Selecione uma das opções abaixo!!!
     [ 1 ] Você compra varios pacotes ao mês?
@@ -64,11 +73,11 @@ elif higiene == 2:
         sleep(3)
         print('Gasto anual de R$:{:.2f}'.format(c))
     else:
-        granulado = int(input('Qauntos pacotes de Granulado higiênico você estoca?:'))
+        granulado = int(input('Quantos pacotes de Granulado higiênico você estoca no mês?:'))
         granuladomeses = int(input('Você reestoca o número de {} pacotes de Granulado a cada quantos meses?: '.format(granulado)))
         granuladoc = (granulado * valor)
         granuladomesesc = (12 / granuladomeses) * granuladoc
-        print('Gastando R$:{:.2f} em Granulado Higiênico a cada {} meses.'.format(valor, granuladomeses))
+        print('Gastando R$:{:.2f} em Granulado Higiênico de {}Kg a cada {} meses.'.format(valor, kg, granuladomeses))
         print('CARREGANDO...')
         sleep(3)
         print('Você tem o gasto anual de {:.2f}'.format(granuladomesesc))
