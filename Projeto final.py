@@ -17,14 +17,14 @@ if select == 1:
         if select == 1:
             quantidade = int(input('Quantos pacotes você compra no mês?: '))
             c = (quantidade * valor) * 12
-            print('Gastando R$:{:.2f} no pacote de {}Kg se anual com Ração é...'.format)(valor, kg)
+            print('Gastando R$:{:.2f} no pacote de {}Kg se anual com Ração é...'.format(valor, kg))
             print('CARREGANDO...')
             sleep(3)
             print('Gasto Anual de R$:{:.2f}'.format(c))
         else:
-            ração = int(input('Quantos pacotes de Ração você estoca no Mês'))
+            ração = int(input('Quantos pacotes de Ração você estoca no Mês: '))
             raçãomeses = int(input('Você reestoca o número de {} pacotes de Ração a cada quantos meses?: '.format(ração)))
-            raçãoc = (ração *- valor)
+            raçãoc = (ração * valor)
             raçãomesesc = (12 / raçãomeses) * raçãoc
             print('Gastando R$:{:.2f} em Ração de {} kg a cada {} meses o seu gasto anual é de...'.format(valor, kg, raçãomeses))
             print('CARREGANDO...')
@@ -125,14 +125,14 @@ else:
         if select == 1:
             quantidade = int(input('Quantos pacotes você compra no mês?: '))
             c = (quantidade * valor) * 12
-            print('Gastando R$:{:.2f} no pacote de {}Kg se anual com Ração é...'.format)(valor, kg)
+            print('Gastando R$:{:.2f} no pacote de {}Kg se anual com Ração é...'.format(valor, kg))
             print('CARREGANDO...')
             sleep(3)
             print('Gasto Anual de R$:{:.2f}'.format(c))
         else:
-            ração = int(input('Quantos pacotes de Ração você estoca no Mês'))
+            ração = int(input('Quantos pacotes de Ração você estoca no Mês: '))
             raçãomeses = int(input('Você reestoca o número de {} pacotes de Ração a cada quantos meses?: '.format(ração)))
-            raçãoc = (ração *- valor)
+            raçãoc = (ração * valor)
             raçãomesesc = (12 / raçãomeses) * raçãoc
             print('Gastando R$:{:.2f} em Ração de {} kg a cada {} meses o seu gasto anual é de...'.format(valor, kg, raçãomeses))
             print('CARREGANDO...')
