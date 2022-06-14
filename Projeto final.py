@@ -51,7 +51,7 @@ if select == 1:
             sleep(3)
             print('Gasto anual de R$:{:.2f}'.format(c))
         else:
-            areia = int(input('Quantos apcotes de areia você estoca?: '))
+            areia = int(input('Quantos pacotes de areia você estoca?: '))
             areiameses = int(input('Você reestoca o número de {} pacotes de Areia a cada quantos meses?: '.format(areia)))
             areiac = (areia * valor)
             areiamesesc = (12 / areiameses) * areiac
@@ -159,7 +159,7 @@ else:
             sleep(3)
             print('Gasto anual de R$:{:.2f}'.format(c))
         else:
-            folhas = int(input('Quantos apcotes de areia você estoca?: '))
+            folhas = int(input('Quantos pacotes de areia você estoca?: '))
             folhasmeses = int(input('Você reestoca o número de {} pacotes de Areia a cada quantos meses?: '.format(folhas)))
             folhasc = (folhas * valor)
             folhasmesesc = (12 / folhasmeses) * folhasc
